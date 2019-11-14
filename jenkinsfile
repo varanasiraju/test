@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage('Shell commands') {
+            steps {
+                sh 'echo WELCOME TO HPE'
+                Sh 'echo Please Find Today Date'
+                sh 'date'
+                
+            }
+        }
+    }
+}
