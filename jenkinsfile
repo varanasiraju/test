@@ -3,10 +3,9 @@ pipeline {
     stages {
         stage('Shell commands') {
             steps {
-                sh 'echo WELCOME TO HPE'
-                Sh 'echo Please Find Today Date'
-                sh 'date'
-                
+                sh label: '', script: 'echo WELCOME TO HPE'
+                sh label: '', script: 'echo Please Find Today Date'
+                sh label: '', script: 'date'     
             }
         }
     }
