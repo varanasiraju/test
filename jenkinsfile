@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Shell commands') {
             steps {
-                sh label: '', script: 'sudo sh finance/sample.sh'   
+                sh label: '', script: 'sudo sh /var/lib/jenkins/workspace/hpe project/finance/sample.sh'   
             }
         }
     }
