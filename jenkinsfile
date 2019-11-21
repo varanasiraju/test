@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Shell commands') {
             steps {
-                sh label: '', script: 'cd /var/lib/jenkins/workspace/hpe project/finance/'   
+                sh label: '', script: 'cd /var/lib/jenkins/workspace/hpe\ project/finance/'   
                 sh label: '', script: './sample.sh' 
             }
         }
