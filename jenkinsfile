@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Shell commands') {
             steps {
+                sh label: '', script: 'sudo rm -r sample@tmp'
                 sh label: '', script: './raju.sh'
                 sh label: '', script: 'echo "WELCOME TO EAP PROJECT TEAM"'   
                 sh label: '', script: 'echo "Kindly find the Versions of JENKINS JAVA and GIT"'
