@@ -3,8 +3,13 @@ pipeline {
     stages {
         stage('Shell commands') {
             steps {
-                sh label: '', script: 'cd finance/'   
-                sh label: '', script: './sample.sh' 
+                sh label: '', script: 'echo "WELCOME TO EAP PROJECT TEAM"'   
+                sh label: '', script: 'echo "Kindly find the Versions of JENKINS JAVA and GIT"'
+                sh label: '', script: 'java -jar /usr/share/jenkins/jenkins.war --version'
+                sh label: '', script: 'java -version'
+                sh label: '', script: 'git --version'
+                sh label: '', script: 'echo "kindly find jenkins server configurations"'
+                sh label: '', script: 'uname -ar'
             }
         }
     }
