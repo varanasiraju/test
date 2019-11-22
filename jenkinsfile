@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Shell commands') {
             steps {
-                sh label: '', script: 'sudo chmod 777 finance/sample.sh'
-                sh label: '', script: 'sudo sh finance/sample.sh'
+               sh label: '', script: 'sh finance/sample.sh'
   
             }
         }
