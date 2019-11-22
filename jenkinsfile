@@ -4,7 +4,7 @@ pipeline {
         stage('Shell commands') {
             steps {
                 
-                sh label: '', script: './raju.sh'
+                sh label: '', script: 'sudo sh ./raju.sh'
   
             }
         }
